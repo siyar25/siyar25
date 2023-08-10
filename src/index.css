@@ -1,2 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 :root {
+  --black: rgb(23, 23, 23);
+  --green: rgb(26, 255, 128);
+  --greenActive: rgb(26, 255, 128, 0.25);
+  --greenDark:rgb(0, 69, 15);
+  --purple: rgb(199, 0, 232);
+  --purpleActive: rgba(199, 0, 232, 0.25);
+  --purpleDark: rgb(61, 0, 69);
+  --bgColor: var(--primaryColor);
+  --primaryColor: var(--purple);
+  --activeColor: var(--purpleActive);
+  --darkColor: var(--purpleDark);
+
+  background-color: var(--bgColor);
+  color: var(--primaryColor);
+  font-family: "Space Mono", monospace;
+}
+
+*, html {
+    margin: 0;
 }

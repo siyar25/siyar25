@@ -1,0 +1,51 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: var(--black); */
+  background-image: url("../../assets/screen-stripes.jpg");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: var(--darkColor);
+  padding: 2rem 3rem;
+  border-radius: 50px;
+  height: 20%;
+}
+
+.line {
+  width: 2rem;
+  height: 3px;
+  background-color: var(--primaryColor);
+}
+
+.nav-btn {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1.25rem 3rem;
+    border: 3px solid var(--primaryColor);
+    width: 200px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 120%;
+    transition: 250ms;
+}
+
+.nav-btn:hover {
+    background-color: var(--activeColor);
+    transition: 250ms;
+}
+
+.active {
+
+}
+
+a:link,
+a:visited,
+a:active {
+    color: var(--primaryColor);
+    text-decoration: none;
+}
