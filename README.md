@@ -1,6 +1,6 @@
-<h1 align=center>
+<!-- <h1 align=center>
     <img alt="Siyar Farouq" src="./src/assets/Siyar%20Farouq.svg?raw=true"/>
-</h1>
+</h1> -->
 
 # Hello there! 👋
 
