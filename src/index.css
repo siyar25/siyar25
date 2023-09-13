@@ -2,17 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 :root {
-  --black: rgb(23, 23, 23);
-  --green: rgb(26, 255, 128);
-  --greenActive: rgb(26, 255, 128, 0.25);
-  --greenDark:rgb(0, 69, 15);
-  --purple: rgb(199, 0, 232);
-  --purpleActive: rgba(199, 0, 232, 0.25);
-  --purpleDark: rgb(61, 0, 69);
-  --bgColor: var(--primaryColor);
-  --primaryColor: var(--purple);
-  --activeColor: var(--purpleActive);
-  --darkColor: var(--purpleDark);
+  --black: #2C2C2C;
+  --yellow: #E8CB80;
+  --white: #D9D9D9;
+  --green: #15554A; 
+
+  --bgColorLight: var(--white);
+  --borderColorLight: var(--black);
+  --primaryColorLight: var(--black);
+  --secondaryColorLight: var(--yellow);
+
+  --bgColorDark: var(--black);
+  --borderColorDark: var(--white);
+  --primaryColorDark: var(--white);
+  --secondaryColorDark: var(--green);
+
+  --bgColor: var(--bgColorLight);
+  --borderColor: var(--borderColorLight);
+  --primaryColor: var(--primaryColorLight);
+  --secondaryColor: var(--secondaryColorLight);
 
   background-color: var(--bgColor);
   color: var(--primaryColor);

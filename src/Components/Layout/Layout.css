@@ -5,18 +5,14 @@
   width: calc(100vw - 1rem);
   height: calc(100vh - 1rem);
   overflow: auto;
-  gap: 0.7rem;
 }
 
 .content {
-  background-image: url("../../assets/screen-stripes.jpg");
-  background-position: center;
-  background-size: contain;
-  background-blend-mode: darken;
-  background-color: var(--darkColor);
-  /* background: radial-gradient(var(--darkColor), var(--black)); */
-  padding: 2rem 3rem;
-  border-radius: 50px;
+  background-color: var(--bgColor);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 10px;
   height: 100%;
 }
 
