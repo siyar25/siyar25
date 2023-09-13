@@ -1,0 +1,6 @@
+.circle {
+    position: absolute;
+    background-color: var(--secondaryColor);
+    filter: blur(25px);
+    border-radius: 100%;
+}

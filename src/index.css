@@ -6,21 +6,26 @@
   --yellow: #E8CB80;
   --white: #D9D9D9;
   --green: #15554A; 
+  --yellowHover: #e9d39c;
+  --greenHover: #136d5e;
 
   --bgColorLight: var(--white);
   --borderColorLight: var(--black);
   --primaryColorLight: var(--black);
   --secondaryColorLight: var(--yellow);
+  --hoverColorLight: var(--yellowHover);
 
   --bgColorDark: var(--black);
   --borderColorDark: var(--white);
   --primaryColorDark: var(--white);
   --secondaryColorDark: var(--green);
+  --hoverColorDark: var(--greenHover);
 
   --bgColor: var(--bgColorLight);
   --borderColor: var(--borderColorLight);
   --primaryColor: var(--primaryColorLight);
   --secondaryColor: var(--secondaryColorLight);
+  --hoverColor: var(--hoverColorLight);
 
   background-color: var(--bgColor);
   color: var(--primaryColor);
@@ -29,4 +34,5 @@
 
 *, html {
     margin: 0;
+    overflow: hidden;
 }

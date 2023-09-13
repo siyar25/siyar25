@@ -12,6 +12,7 @@ nav {
   padding: 0.2rem;
   border-radius: 10px;
   height: fit-content;
+  z-index: 1;
 }
 
 .nav-btn {
@@ -29,7 +30,7 @@ nav {
 }
 
 .nav-btn:hover {
-    /* background-color: var(--activeColor); */
+    background-color: var(--hoverColor);
     transition: 250ms;
 }
 

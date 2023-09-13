@@ -5,6 +5,7 @@
   top: 1.5rem;
   display: flex;
   flex-direction: row;
+  z-index: 1;
 }
 
 .logo {
@@ -20,6 +21,7 @@
   line-height: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
+  cursor: pointer;
 }
 
 .job {
@@ -36,6 +38,7 @@
 }
 
 .theme-btn {
+    cursor: pointer;
 }
 
 .profile-pic-container {
@@ -46,6 +49,7 @@
     align-items: center;
     justify-content: center;
     border: 2px solid var(--secondaryColor);
+    cursor: pointer;
 }
 
 #profile-pic {
