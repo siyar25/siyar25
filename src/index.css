@@ -14,18 +14,24 @@
   --primaryColorLight: var(--black);
   --secondaryColorLight: var(--yellow);
   --hoverColorLight: var(--yellowHover);
+  --activeBgColorLight: var(--black);
+  --activeColorLight: var(--white);
 
   --bgColorDark: var(--black);
   --borderColorDark: var(--white);
   --primaryColorDark: var(--white);
   --secondaryColorDark: var(--green);
   --hoverColorDark: var(--greenHover);
+  --activeBgColorDark: var(--white);
+  --activeColorDark: var(--black);
 
   --bgColor: var(--bgColorLight);
   --borderColor: var(--borderColorLight);
   --primaryColor: var(--primaryColorLight);
   --secondaryColor: var(--secondaryColorLight);
   --hoverColor: var(--hoverColorLight);
+  --activeBgColor: var(--activeBgColorLight);
+  --activeColor: var(--activeColorLight);
 
   background-color: var(--bgColor);
   color: var(--primaryColor);

@@ -4,9 +4,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
     background-color: var(--borderColor);
+}
+
+.page {
+    z-index: 1;
+    padding-top: 6rem;
+    height: 100%;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+
 }
 
 

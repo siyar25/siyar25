@@ -1,18 +1,22 @@
 import "./UpperNav.css";
 import profilePic from "../../assets/profile-pic-square.jpeg";
-import { GiMoon } from "react-icons/gi"
-import { useState } from "react";
+import { GiMoon } from "react-icons/gi";
+import { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function UpperNav() {
+  const location = useLocation();
+  const [darkMode, setDarkMode] = useState(false);
+  const [onHomePage, setOnHomePage] = useState(location.pathname === "/");
 
-  const [darkMode, setDarkMode] = useState(false)
+  useEffect(() => {
+    setOnHomePage(location.pathname === "/");
+  }, [location]);
 
   function handleThemeChange() {
     const root = document.querySelector(":root");
-
     darkMode ? changeToLight(root) : changeToDark(root);
-
-    setDarkMode(mode => !mode);
+    setDarkMode((mode) => !mode);
   }
 
   function changeToDark(root) {
@@ -21,6 +25,8 @@ export default function UpperNav() {
     root.style.setProperty("--primaryColor", "var(--primaryColorDark)");
     root.style.setProperty("--secondaryColor", "var(--secondaryColorDark)");
     root.style.setProperty("--hoverColor", "var(--hoverColorDark)");
+    root.style.setProperty("--activeBgColor", "var(--activeBgColorDark)");
+    root.style.setProperty("--activeColor", "var(--activeColorDark)");
   }
 
   function changeToLight(root) {
@@ -29,28 +35,39 @@ export default function UpperNav() {
     root.style.setProperty("--primaryColor", "var(--primaryColorLight)");
     root.style.setProperty("--secondaryColor", "var(--secondaryColorLight)");
     root.style.setProperty("--hoverColor", "var(--hoverColorLight)");
+    root.style.setProperty("--activeBgColor", "var(--activeBgColorLight)");
+    root.style.setProperty("--activeColor", "var(--activeColorLight)");
   }
 
   return (
     <div className="upper-nav">
-      <div className="logo">
-        <div className="name">
-          Farouq
-          <br />
+      <div className="logo" style={{visibility: `${onHomePage ? "hidden" : "visible"}`}}>
+        <NavLink className="name" to={"/"}>
           Siyar
-        </div>
+          <br />
+          Farouq
+        </NavLink>
         <div className="job">
           Full-Stack Developer
           <br />
-          from Budapest
+          from Budapest, Hungary
         </div>
       </div>
       <div className="buttons">
-        <div className="theme-btn" onClick={handleThemeChange}><GiMoon /></div>
-        <div className="profile-pic-container">
-        <img src={profilePic} alt="Profile picture of Siyar Farouq" id="profile-pic"/>
-
+        <div className="theme-btn" onClick={handleThemeChange}>
+          <GiMoon />
         </div>
+        <NavLink
+          className={`profile-pic-container ${onHomePage ? "at-home" : null}`}
+          to={"aboutme"}
+          style={{visibility: `${onHomePage ? "hidden" : "visible"}`}}
+        >
+          <img
+            src={profilePic}
+            alt="Profile picture of Siyar Farouq"
+            className={`profile-pic ${onHomePage ? "at-home" : null}`}
+          />
+        </NavLink>
       </div>
     </div>
   );

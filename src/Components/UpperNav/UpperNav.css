@@ -5,7 +5,7 @@
   top: 1.5rem;
   display: flex;
   flex-direction: row;
-  z-index: 1;
+  z-index: 2;
 }
 
 .logo {
@@ -38,23 +38,62 @@
 }
 
 .theme-btn {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .profile-pic-container {
-    width: 3.75rem;
-    height: 3.75rem;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--secondaryColor);
-    cursor: pointer;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--secondaryColor);
+  cursor: pointer;
 }
 
-#profile-pic {
+.profile-pic-container.at-home {
+  /* position: absolute;
+  top: 0; bottom: 0; right: 0; left: 0;
+  translate: 500%; */
+}
+
+.profile-pic {
   width: 3.25rem;
   height: 3.25rem;
   border-radius: 100%;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .upper-nav {
+  }
+
+  .logo {
+    gap: 0.5rem;
+  }
+
+  .name {
+    font-size: 1rem;
+    line-height: normal;
+  }
+
+  .job {
+    font-size: 0.5rem;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .buttons {
+  }
+
+  .profile-pic-container {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .profile-pic {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
