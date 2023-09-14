@@ -60,7 +60,7 @@ export default function UpperNav() {
         <NavLink
           className={`profile-pic-container ${onHomePage ? "at-home" : null}`}
           to={"aboutme"}
-          style={{visibility: `${onHomePage ? "hidden" : "visible"}`}}
+          style={{display: `${onHomePage ? "none" : "block"}`}}
         >
           <img
             src={profilePic}
